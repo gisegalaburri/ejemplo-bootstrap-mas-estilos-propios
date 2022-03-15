@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Hola Mundo con Bootstrap</h1>
+  <button class="btn btn-success">Button</button>
+  <a class="btn btn-primary" id="boton-link" href="#">Link</a>
+  <input class="btn btn-info clase-extra" type="text" placeholder="Soy un texto de ejemplo">
+
+  <!-- En este ejemplo la clase "container" de Bootstrap nos determina el ancho
+    máximo de los elementos block -->
+  <!-- Los elementos div son elementos en bloque -->
+  <div class="container">
+    <p>Fila1</p>
+    <div class="row">
+      <!-- Los div anidados se adaptan al tamaño máximo que sus elementos padres permiten -->
+      <div class="col-sm-6">class="col-sm-6"</div>
+      <div class="col-sm-2">class="col-sm-2"</div>
+      <div class="col-sm-4">class="col-sm-4" <!-- Este div (con la clase "col-sm-4") nos muestra que su contenido afecta a su propio
+                                              tamaño y al de los demas divs "hermanos"s -->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum autem quia sunt odio temporibus veniam neque
+        corporis quidem magnam? Excepturi commodi nobis sequi modi illo quia ex expedita neque voluptate.
+      </div>
+    </div>
+    <p>Fila2</p>
+    <div class="row">
+      <!-- La división de columnas de Bootstrap es de 12 columnas -->
+      <div class="col-sm-2">class="col-sm-2"</div>
+      <div class="col-sm-2">Colunma</div>
+      <div class="col-sm-2">Colunma</div>
+      <div class="col-sm-2">Colunma</div>
+      <div class="col-sm-2">Colunma</div>
+      <div class="col-sm-2">Colunma</div>
+    </div>
+    <p>Fila3</p>
+    <div class="row">
+      <div class="col-sm-6">class="col-sm-6" Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam laboriosam,
+        exercitationem optio quas veritatis doloribus, corporis delectus vitae provident, nobis deserunt praesentium
+        natus unde quae nostrum sint commodi numquam odit?
+      </div>
+      <div class="col-sm-6">
+        <div class="row">
+          <!-- La división de columnas de Bootstrap es de 12 columnas -->
+          <div class="col-sm-4">Uno</div>
+          <div class="col-sm-4">Dos</div>
+          <div class="col-sm-4">Tres</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">Uno</div>
+          <div class="col-sm-6">Dos</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">Uno</div>
+          <div class="col-sm-6">Dos</div>
+        </div>
+      </div>
+    </div>
+    <p>Fila4</p>
+    <!-- Divs vacíos (sin contenido) igual ocupa todo el ancho el disponible -->
+    <div class="row"></div>
+    <p>fila5</p>
+    <div class="row"></div>
+  </div>
+</body>
+
+</html>
